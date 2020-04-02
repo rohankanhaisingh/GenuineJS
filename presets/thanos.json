@@ -1,0 +1,82 @@
+{
+  "Amount": 30,
+  "Radius": 80,
+  "Color": "#e3e3e3",
+  "MoveSpeed": 1,
+  "Spawn": "random",
+  "Image": {
+    "IsActive": true,
+    "Source": "./thanos.png"
+  },
+  "BounceToOthers": true,
+  "MagneticEffect": false,
+  "Effects": {
+    "RandomMove": true,
+    "IsRain": false,
+    "Gravity": {
+      "IsActive": false,
+      "Bounce": true,
+      "Force": 0.1
+    },
+    "Trail": {
+      "IsActive": false,
+      "Radius": 0.7,
+      "Length": 0.05,
+      "Color": "#fff"
+    },
+    "Connect": {
+      "IsActive": false,
+      "Radius": 1190,
+      "Width": 0.1,
+      "Color": "#e3e3e3"
+    },
+    "HitCorners": {
+      "IsActive": false,
+      "Destroy": true,
+      "Explode": {
+        "IsActive": false,
+        "Force": 1,
+        "Speed": 0.1,
+        "Color": "#e3e3e3"
+      }
+    }
+  },
+  "MouseEvent": {
+    "Settings": { "Radius": 400 },
+    "Hover": {
+      "IsActive": false,
+      "PopSpeed": 13,
+      "Radius": 3,
+      "MoveSpeed": 0,
+      "Color": "rgb(205, 0, 3)",
+      "PushFromMouseDirection": { "IsActive": false },
+      "MoveToMouseDirection": { "IsActive": false },
+      "Connect": {
+        "IsActive": true,
+        "Width": 0.1,
+        "Color": "#e3e3e3"
+      }
+    },
+    "MouseDown": {
+      "Button": 1,
+      "IsActive": true,
+      "PopSpeed": 1,
+      "Radius": 2,
+      "MoveSpeed": 0,
+      "Color": "default",
+      "PushFromMouseDirection": { "IsActive": false },
+      "MoveToMouseDirection": { "IsActive": false },
+      "Connect": {
+        "IsActive": true,
+        "Width": 0.3,
+        "Color": "#e3e3e3"
+      },
+      "Summon": {
+        "IsActive": true,
+        "UseDefaultProperties": true,
+        "UseMousePosition": true,
+        "Amount": 4
+      }
+    }
+  }
+}

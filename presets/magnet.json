@@ -1,0 +1,77 @@
+{
+  "Amount": 200,
+  "Radius": 2,
+  "Color": "rgb(166 , 87 , 234)",
+  "MoveSpeed": 0.01,
+  "Spawn": "random",
+  "BounceToOthers": false,
+  "MagneticEffect": true,
+  "Effects": {
+    "RandomMove": true,
+    "IsRain": false,
+    "Gravity": {
+      "IsActive": false,
+      "Force": 0.1
+    },
+    "Trail": {
+      "IsActive": true,
+      "Radius": 0.8,
+      "Length": 0.1,
+      "Color": "#fff"
+    },
+    "Connect": {
+      "IsActive": true,
+      "Radius": 90,
+      "Width": 0.1,
+      "Color": "#e3e3e3"
+    },
+    "HitCorners": {
+      "IsActive": false,
+      "Destroy": true,
+      "Explode": {
+        "IsActive": false,
+        "Force": 1,
+        "Speed": 0.1,
+        "Color": "#e3e3e3"
+      }
+    }
+  },
+  "MouseEvent": {
+    "Settings": { "Radius": 300 },
+    "Hover": {
+      "IsActive": false,
+      "PopSpeed": 0.2,
+      "Radius": 3,
+      "MoveSpeed": 0,
+      "Color": "rgb(247 , 118 , 164)",
+      "PushFromMouseDirection": { "IsActive": false },
+      "MoveToMouseDirection": { "IsActive": true },
+      "Connect": {
+        "IsActive": true,
+        "Width": 1,
+        "Color": "rgb(178 , 165 , 165)"
+      }
+    },
+    "MouseDown": {
+      "Button": 1,
+      "IsActive": true,
+      "PopSpeed": 0.4,
+      "Radius": 1,
+      "MoveSpeed": 0,
+      "Color": "default",
+      "PushFromMouseDirection": { "IsActive": true },
+      "MoveToMouseDirection": { "IsActive": false },
+      "Connect": {
+        "IsActive": false,
+        "Width": 0.1,
+        "Color": "#e3e3e3"
+      },
+      "Summon": {
+        "IsActive": false,
+        "UseDefaultProperties": true,
+        "UseMousePosition": true,
+        "Amount": 10
+      }
+    }
+  }
+}
